@@ -1,0 +1,236 @@
+{
+  "dataset": {
+    "name": "Breast Cancer Wisconsin (Diagnostic)",
+    "source": "UCI Machine Learning Repository (ID 17)",
+    "url": "https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic",
+    "n_instances": 569,
+    "n_features": 30,
+    "target": "diagnosis",
+    "classes": {
+      "0": "Benign",
+      "1": "Malignant"
+    },
+    "task": "Binary classification"
+  },
+  "split": {
+    "test_size": 0.3,
+    "random_state": 42,
+    "n_train": 398,
+    "n_test": 171
+  },
+  "feature_names": [
+    "mean_radius",
+    "mean_texture",
+    "mean_perimeter",
+    "mean_area",
+    "mean_smoothness",
+    "mean_compactness",
+    "mean_concavity",
+    "mean_concave_points",
+    "mean_symmetry",
+    "mean_fractal_dimension",
+    "radius_error",
+    "texture_error",
+    "perimeter_error",
+    "area_error",
+    "smoothness_error",
+    "compactness_error",
+    "concavity_error",
+    "concave_points_error",
+    "symmetry_error",
+    "fractal_dimension_error",
+    "worst_radius",
+    "worst_texture",
+    "worst_perimeter",
+    "worst_area",
+    "worst_smoothness",
+    "worst_compactness",
+    "worst_concavity",
+    "worst_concave_points",
+    "worst_symmetry",
+    "worst_fractal_dimension"
+  ],
+  "results": {
+    "Logistic Regression": {
+      "test": {
+        "Accuracy": 0.9708,
+        "AUC": 0.9975,
+        "Precision": 0.9836,
+        "Recall": 0.9375,
+        "F1": 0.96,
+        "MCC": 0.9376
+      },
+      "train": {
+        "Accuracy": 0.9874,
+        "AUC": 0.9972,
+        "Precision": 1.0,
+        "Recall": 0.9662,
+        "F1": 0.9828,
+        "MCC": 0.9733
+      },
+      "cv_accuracy_mean": 0.9723,
+      "cv_accuracy_std": 0.0218,
+      "confusion_matrix": [
+        [
+          106,
+          1
+        ],
+        [
+          4,
+          60
+        ]
+      ]
+    },
+    "Decision Tree": {
+      "test": {
+        "Accuracy": 0.9064,
+        "AUC": 0.9262,
+        "Precision": 1.0,
+        "Recall": 0.75,
+        "F1": 0.8571,
+        "MCC": 0.8077
+      },
+      "train": {
+        "Accuracy": 0.9698,
+        "AUC": 0.9979,
+        "Precision": 0.9928,
+        "Recall": 0.9257,
+        "F1": 0.958,
+        "MCC": 0.936
+      },
+      "cv_accuracy_mean": 0.932,
+      "cv_accuracy_std": 0.0237,
+      "confusion_matrix": [
+        [
+          107,
+          0
+        ],
+        [
+          16,
+          48
+        ]
+      ]
+    },
+    "kNN": {
+      "test": {
+        "Accuracy": 0.9649,
+        "AUC": 0.9893,
+        "Precision": 1.0,
+        "Recall": 0.9062,
+        "F1": 0.9508,
+        "MCC": 0.9264
+      },
+      "train": {
+        "Accuracy": 1.0,
+        "AUC": 1.0,
+        "Precision": 1.0,
+        "Recall": 1.0,
+        "F1": 1.0,
+        "MCC": 1.0
+      },
+      "cv_accuracy_mean": 0.9648,
+      "cv_accuracy_std": 0.0304,
+      "confusion_matrix": [
+        [
+          107,
+          0
+        ],
+        [
+          6,
+          58
+        ]
+      ]
+    },
+    "Naive Bayes": {
+      "test": {
+        "Accuracy": 0.9357,
+        "AUC": 0.9933,
+        "Precision": 0.9492,
+        "Recall": 0.875,
+        "F1": 0.9106,
+        "MCC": 0.8622
+      },
+      "train": {
+        "Accuracy": 0.9472,
+        "AUC": 0.9883,
+        "Precision": 0.9504,
+        "Recall": 0.9054,
+        "F1": 0.9273,
+        "MCC": 0.8866
+      },
+      "cv_accuracy_mean": 0.9296,
+      "cv_accuracy_std": 0.0207,
+      "confusion_matrix": [
+        [
+          104,
+          3
+        ],
+        [
+          8,
+          56
+        ]
+      ]
+    },
+    "Random Forest (Ensemble)": {
+      "test": {
+        "Accuracy": 0.9766,
+        "AUC": 0.9963,
+        "Precision": 1.0,
+        "Recall": 0.9375,
+        "F1": 0.9677,
+        "MCC": 0.9506
+      },
+      "train": {
+        "Accuracy": 1.0,
+        "AUC": 1.0,
+        "Precision": 1.0,
+        "Recall": 1.0,
+        "F1": 1.0,
+        "MCC": 1.0
+      },
+      "cv_accuracy_mean": 0.9496,
+      "cv_accuracy_std": 0.0358,
+      "confusion_matrix": [
+        [
+          107,
+          0
+        ],
+        [
+          4,
+          60
+        ]
+      ]
+    },
+    "Gradient Boosting (Ensemble)": {
+      "test": {
+        "Accuracy": 0.9649,
+        "AUC": 0.9972,
+        "Precision": 0.9833,
+        "Recall": 0.9219,
+        "F1": 0.9516,
+        "MCC": 0.9253
+      },
+      "train": {
+        "Accuracy": 1.0,
+        "AUC": 1.0,
+        "Precision": 1.0,
+        "Recall": 1.0,
+        "F1": 1.0,
+        "MCC": 1.0
+      },
+      "cv_accuracy_mean": 0.9572,
+      "cv_accuracy_std": 0.0389,
+      "confusion_matrix": [
+        [
+          106,
+          1
+        ],
+        [
+          5,
+          59
+        ]
+      ]
+    }
+  },
+  "winner": "Random Forest (Ensemble)"
+}
