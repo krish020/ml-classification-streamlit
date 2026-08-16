@@ -90,10 +90,10 @@ The three variants are `mean_*` (average over nuclei), `*_error` (standard error
 
 ## c. GitHub Repository Link
 
-> **Repository:** `https://github.com/<your-username>/ml-classification-streamlit`
+> **Repository:** `https://github.com/krish020/ml-classification-streamlit`
 
-⚠️ **Replace `<your-username>` with your actual GitHub username before submitting.**
-See the *Deployment Instructions* section at the bottom for step-by-step commands.
+Public repository containing the complete source code, `requirements.txt`, this README,
+`test_data.csv`, and a `model/` folder with all six saved model files.
 
 ### Repository structure
 
@@ -214,8 +214,8 @@ oblique boundary, is the one that fails.
 
 ## Streamlit Application Features
 
-Live app: **`https://<your-app-name>.streamlit.app`**
-*(replace with your real URL after deploying — see instructions below)*
+Live app: **`https://ml-classification-app-jquhinl4vwhccwty8nurss.streamlit.app`**
+*Deployed on Streamlit Community Cloud — opens directly into an interactive frontend.*
 
 | # | Required feature | Implementation |
 |---|---|---|
@@ -241,7 +241,7 @@ Live app: **`https://<your-app-name>.streamlit.app`**
 ## Running Locally
 
 ```bash
-git clone https://github.com/<your-username>/ml-classification-streamlit.git
+git clone https://github.com/krish020/ml-classification-streamlit.git
 cd ml-classification-streamlit
 
 python -m venv venv
@@ -269,7 +269,7 @@ git init
 git add .
 git commit -m "Multi-model classification assignment"
 git branch -M main
-git remote add origin https://github.com/<your-username>/ml-classification-streamlit.git
+git remote add origin https://github.com/krish020/ml-classification-streamlit.git
 git push -u origin main
 ```
 
@@ -279,15 +279,15 @@ Make sure the repository is **public** so the evaluator can open it.
 
 1. Go to https://share.streamlit.io and sign in with GitHub.
 2. Click **New app** → **Deploy a public app from GitHub**.
-3. Set **Repository** = `<your-username>/ml-classification-streamlit`,
+3. Set **Repository** = `krish020/ml-classification-streamlit`,
    **Branch** = `main`, **Main file path** = `app.py`.
 4. Click **Deploy**. The first build takes 2–5 minutes.
-5. Copy the resulting `https://<your-app-name>.streamlit.app` URL.
+5. Copy the resulting `https://ml-classification-app-jquhinl4vwhccwty8nurss.streamlit.app` URL.
 
-**3 — Final step before submitting**
+**3 — Verify**
 
-Replace the two placeholders in this README (§c GitHub link and the Streamlit app link
-above) with your real URLs, then verify both links open in a private/incognito window.
+Open both the repository and the app URL in a private/incognito window to confirm they are
+publicly reachable.
 
 ---
 
