@@ -259,47 +259,6 @@ The app opens at `http://localhost:8501`.
 
 ---
 
-## Deployment Instructions (Streamlit Community Cloud)
-
-**1 — Push to GitHub**
-
-```bash
-cd ml-classification-streamlit
-git init
-git add .
-git commit -m "Multi-model classification assignment"
-git branch -M main
-git remote add origin https://github.com/krish020/ml-classification-streamlit.git
-git push -u origin main
-```
-
-Make sure the repository is **public** so the evaluator can open it.
-
-**2 — Deploy**
-
-1. Go to https://share.streamlit.io and sign in with GitHub.
-2. Click **New app** → **Deploy a public app from GitHub**.
-3. Set **Repository** = `krish020/ml-classification-streamlit`,
-   **Branch** = `main`, **Main file path** = `app.py`.
-4. Click **Deploy**. The first build takes 2–5 minutes.
-5. Copy the resulting `https://ml-classification-app-jquhinl4vwhccwty8nurss.streamlit.app` URL.
-
-**3 — Verify**
-
-Open both the repository and the app URL in a private/incognito window to confirm they are
-publicly reachable.
-
----
-
-## Reproducibility
-
-- `random_state=42` fixed for the train/test split and every stochastic model
-- Stratified splitting preserves class balance
-- All preprocessing lives inside scikit-learn `Pipeline` objects — no train/serve skew
-- `model/metrics.json` stores every metric, confusion matrix and CV score reported above,
-  so the numbers in this README are machine-generated rather than transcribed by hand
-
----
 
 ## Tech Stack
 
